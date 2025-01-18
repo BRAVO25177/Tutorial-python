@@ -19,3 +19,4 @@ cess=.04*inc
 total=tax+surchrge+cess
 print(f"Taxable income : {inc:,.2f}")
 print(f"total tax :{total:,.2f}")
+ 
