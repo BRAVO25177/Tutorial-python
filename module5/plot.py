@@ -1,9 +1,11 @@
-'''import numpy as np
 import matplotlib.pyplot as plt
-
-plt.plot([1, 2, 3], [4, 5, 6])
-plt.show()
-'''
-import matplotlib.pyplot as plt
-plt.bar([1,2,3],[3,2,6])
+x=[1,2,3,4,5]
+y=[10,20,3,11,2]
+plt.bar(x,y,label='asdf')
+plt.plot(x,y,color='red',label='square')
+plt.title("PLOt")
+plt.xlabel("Xaxis")
+plt.ylabel("Yaxis")
+plt.legend()
+plt.grid(True)
 plt.show()
