@@ -14,7 +14,7 @@ for i in new:
         ordinal+=26
     word1+=chr(ordinal)
 print(word1)'''
-
+'''
 def sum(high):
     return high
 
@@ -30,4 +30,12 @@ def mul(x,y):
 print(reduce(mul,l))
 
 #lambda
-print(reduce(lambda x,y:x*y,l))
+print(reduce(lambda x,y:x*y,l))'''
+
+import datetime
+x=datetime.datetime(2018,6,1)
+print(x)
+print(x.year)
+print(x.month)
+print(x.day)
+print(x.strftime('%A'))
