@@ -1,0 +1,7 @@
+PYTHON 2024
+PART A 
+1.	X- dog y cat
+a)	dogdogdogdog catcatcatcat
+b)	dogdogdogdogdogdog
+2.	2 6
+3.	L=(i*i for i in range(10))
