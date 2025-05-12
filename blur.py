@@ -23,5 +23,16 @@ def blur(image):
             averages = tuple(map(lambda x: x // 5, sums))
             new.setPixel(x, y, averages)
     new.draw()
+newy=image.getHeight()//2
+newx=image.getWidth()//2
+small=Image(newx,newy)
 
-blur(image)
+
+def shrink():
+    for x in range(newx):
+        for y in range(newy):
+            color=image.getPixel(2*x,2*y)
+            small.setPixel(x,y,(color))
+    small.draw()
+
+shrink()

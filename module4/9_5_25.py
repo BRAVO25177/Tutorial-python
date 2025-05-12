@@ -105,6 +105,7 @@ class Interface(ABC):
     @abstractmethod
     def method1(self):
         pass
+    @abstractmethod
     def method2(self):
         pass
 class Child1(Interface):
