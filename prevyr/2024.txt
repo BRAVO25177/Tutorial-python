@@ -5,3 +5,154 @@ a)	dogdogdogdog catcatcatcat
 b)	dogdogdogdogdogdog
 2.	2 6
 3.	L=(i*i for i in range(10))
+4. def even():
+    for i in range(1,26):
+        if i%2==0:
+            print(i)
+    even()
+5. from turtle import Turtle
+
+t=Turtle()
+t.speed(1)
+t.pencolor('red')
+t.fillcolor('red')
+t.begin_fill()
+for i in range(4):
+    t.forward(100)
+    t.left(90)
+t.end_fill()
+t.screen.exitonclick()
+6.
+Steps using tkinter
+    1. import tkinter
+    2. create main window
+    3. create widgets
+    4.Layout Management
+    5.Add functionality
+    6.Start event loop
+7. 
+class parent:
+    def greet(self):
+        print('Hello i am parent')
+class child(parent):
+    def greet(self):
+        print('Iam child')
+c1=child()
+c1.greet()
+8.
+can only be called once
+automatically initiated when class called
+intialize obj attributes
+initialize the state of objects 
+eg : self.value=value
+9.
+import numpy as np
+
+A=np.random.randint(1,10,size=(3,3))
+print(A)
+9.
+isnull() checks for Nan values in the Dataframe or series
+returns a boolean mask with True for values with having Nan values else false
+df.dropna()--deletes col and rows with nul values
+df.fillna(value)-- fill null with the spec value
+
+
+MODULE1
+11 A.
+age=[]
+for i in range(3):
+    x=int(input('Enter age  :'))
+    age.append(x)
+print(age)
+def eldest():
+    max=age[0]
+    for i in range(3):
+        if age[i]>max:
+            max=age[i]
+    return max
+def youngest():
+    min=age[0]
+    for i in range(3):
+        if age[i]<min:
+            min=age[i]
+    return min
+print('eldest: ',eldest())
+print('youngest : ',youngest())
+
+B.
+a=int(input('Enter a:'))
+b=int(input('Enter b:'))
+exp1=(a+b)**2
+exp2=(a**2+2*a*b+b**2)
+if exp1==exp2:
+    print(True)
+else:
+    print(False)
+
+12
+a.  selection
+        if 
+        if else
+        if elif else
+    control statements
+        for 
+        while
+
+    loop break 
+        break
+        pass
+        continue
+b.def factorial(x):
+    if x==1:
+        return 1
+    else:
+        return x*factorial(x-1)
+x=int(input("Enter number  ;"))
+print(factorial(x))
+13 a.
+
+13.B
+    ' '.join(list(map(str,l)))
+
+    list(map(int,x.split()))
+
+14 a.
+    indexing
+    mutable
+    ordered
+    syntax
+    duplicates allowed
+    performance
+
+17 a.
+from breezypythongui import EasyFrame
+
+class Gui(EasyFrame):
+    def __init__(self):
+        EasyFrame.__init__(self, title='Area Calculator')
+        self.setSize(500, 500)
+        self.setResizable(False)
+
+        # Input labels and fields
+        self.addLabel(text='Enter length:', row=0, column=0, sticky='EW')
+        self.lengthField = self.addIntegerField(value=0, row=1, column=0, sticky='EW')
+
+        self.addLabel(text='Enter breadth:', row=2, column=0, sticky='EW')
+        self.breadthField = self.addIntegerField(value=0, row=3, column=0, sticky='EW')
+
+        # Button
+        self.addButton(text='Calculate Area', row=4, column=0,  command=self.clicked)
+
+        # Output label
+        self.resultLabel = self.addLabel(text='Area will appear here.', row=5, column=0, sticky='EW')
+        self.image=PhotoImage(file="eg.jpeg")
+
+    def clicked(self):
+        length = self.lengthField.getNumber()
+        breadth = self.breadthField.getNumber()
+        area = length * breadth
+        self.resultLabel["text"] = f"Area: {area}"
+
+if __name__ == '__main__':
+    Gui().mainloop()
+b.
