@@ -156,3 +156,19 @@ class Gui(EasyFrame):
 if __name__ == '__main__':
     Gui().mainloop()
 b.
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.linspace(0,10,100)
+y=x**2
+plt.plot(x,y,linestyle='--',color='red')
+plt.title("plot")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.xticks([0,2,4,6,8,10],labels=["Zero", "Two", "Four", "Six", "Eight", "Ten"])
+plt.yticks([0,20,40,60,80,100])
+plt.grid(True)
+plt.show()
+
+20 a.
+    
